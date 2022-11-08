@@ -4,7 +4,10 @@ from .services import hello
 from .services import read_room
 from .services import update_room
 from .services import delete_room
+
+
 app = create_app()
+
 @app.get("/")
 def Hi():
     return hello()
